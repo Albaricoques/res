@@ -1,0 +1,21 @@
+.grid {
+  display: grid;
+  grid-template-areas: "a b c d d"
+                       "f f g d d";
+}
+
+.grid-item {
+  background: #4fc3f7;
+  padding: 1em;
+  border: 2px solid #fff;
+  text-align:center;
+  font-size:35px;
+}
+
+.grid-item:nth-child(4) {
+  grid-area: d;
+}
+
+.grid-item:nth-child(5) {
+  grid-area: f;
+}

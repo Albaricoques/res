@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Float test</title>
+</head>
+<body>
+
+	<style type="text/css">
+		.left, .right { float: left; width: 50% } 
+		.all { float: left; width: 100% } 
+		.all:after { clear: both } /*next elements are going to be on their places with this option */
+	</style>
+
+	<div class="all">
+		<div class="left">Here is the left side. Here is the left side. Here is the left side. Here is the left side. Here is the left side. Here is the left side. Here is the left side. Here is the left side. Here is the left side. Here is the left side. </div>
+		<div class="right">And there you can see the right one. And there you can see the right one. And there you can see the right one. And there you can see the right one. And there you can see the right one. And there you can see the right one. And there you can see the right one. </div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+<response status="ok">
+	<friends>
+		<friend id="1" name="v.pupkin"/>  <!-- Maybe I should include all id in one tag friend, otherwise it will be rewritten by second tag implement -->
+		<friend>
+			<id>"2"
+				<name>"a.pushkin"</name>
+			</id>
+		</friend>
+	</friends>
+</response>

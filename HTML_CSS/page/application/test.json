@@ -1,0 +1,8 @@
+{
+	"status": "ok",
+	"friends": [
+		{ "id": 1, "name": "Sasha" },
+		{ "id": 2, "name": "Masha" },
+		{ "id": 3, "name": "Misha" }
+	]
+}

@@ -1,0 +1,18 @@
+.box {
+   display:flex; /*Чтобы поставить их в ряд, необходимо всего лишь установить display:flex;*/
+   justify-content: space-between; /* Если нам необходимо установить блоки по центру, то мы можем установить justify-content:center здесь же. В случае с float, такая реализация была бы невозможна (без костылей). */
+}
+
+.child {flex-grow: 1}
+
+.box-item {
+   width:100px;
+   height: 100px;
+   background-color:#52a049;
+   border:2px solid #fff;
+}
+
+img {
+   width:100px;
+   float:right;
+}

@@ -1,0 +1,147 @@
+<!-- scheme:[//[user:password@]host[:port]][/]path[?query][#fragment] ,,, password '@' -> '%40' ,,, could be grabbed by sniffer app -->
+
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>PAGE</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description" content="SITE">
+		<!-- <link rel="alternate" href="/test.rss" type="application/rss+xml"> -->
+		<link rel="stylesheet" href="css/style.css"> <!-- NO CLOSING TAGS!!! раньше чтобы не перерисовывать страницу -->	
+	</head>
+	<body>
+		<!-- <style text-decoration=underline></style> -->
+		<p id="sometext">
+			Some 
+			<i>text</i> 
+			<span style="text-decoration:underline"> with </span> 
+			<img src="webs/IMG_20200613_234321.jpg" width="50"><!-- NO CLOSING TAGS!!! -->
+			and 
+			<a href="#yes">hyperlinks</a>
+		</p>
+
+		<p><sup>MIME-</sup>Types: <span class=types><sub>text</sub>/html, text/xml, text/css, text/javascript, application/javascript, application/json, image/png, video/mp4</span></p>
+		<p>Jean Jill <span id=Jack> Jack</span></p>
+		<p>Список <b>товаров</b> в <a href="/cart.php">корзине</a></p>
+		<p>urlencode(я)=%D1%8F , urlencode(a=[1,2])='a=1&a=2' </p>
+
+		<h1>Разные линки (.../page.html, .../page, .../dir/): </h1>
+		<ul class="spisok spisok2">
+			<li><a href="//cdn.org/jquery.js">//cdn.org/jquery.js</a></li>
+			<li><a href="/admin/index.html">/admin/index.html</a></li>
+			<li><a href="/index.html">/index.html</a></li>
+			<li><a href="/../index.html">/../index.html</a></li>
+			<li><a href="admin/index.html">admin/index.html</a></li>
+			<li><a href="admin/../index.html">admin/../index.html</a></li>
+			<li><a href="?full=1">?full=1</a></li>
+			<li id="Chapter2"><a href="#chapter2">#chapter2</a></li>
+		</ul>
+		<p> text after "ul" in "p" with css turns red </p>
+		<div id="container">
+			<ol class=spisok>
+				<li><code>#part_of_code</code>, hyperlinks</li>
+				<li>Element2
+					<ol>
+						<li>POTOMOK</li>
+					</ol>
+				</li>
+			</ol>
+		</div>
+		<!-- Тег <code> предназначен для отображения одной или нескольких строк текста, который представляет собой программный код. Сюда относятся имена переменных, ключевые слова, тексты функции и т. д. Браузеры обычно отображают содержимое контейнера <code> как моноширинный текст уменьшенного размера.-->
+
+
+		<form action="https://duckduckgo.com/" metod="POST" target="_blank" enctype="application/x-www-form-urlencoded">
+			<input type="text" name="q" value="" placeholder="Your Question" autocomplete=off>
+			<input type="hidden" name="ia" value="images"> <!-- harvests some user info -->
+			<input type="checkbox" name="q2" value="">
+			<input type="radio" name="qradio" value="">
+			<input type="radio" name="qradio2" value="">
+			<textarea name="q3" value=""></textarea>
+			<select name="q" value=""></select> <!-- htmlbook.ru -->
+			<option name="q" value=""></option>
+			<button type="submit">Find</button>
+		</form>
+
+		<p><form action="https://duckduckgo.com/" metod="POST" target="_blank" enctype="multipart/form-data">
+			<input type="file">
+			<button type="submit">Load</button>
+		</form></p>
+
+		<table border="1" class=spisok>
+			<caption>Kvartalny Otchet</caption>
+
+			<thead>
+				<tr>
+					<td>date</td>
+					<td colspan="2">income</td>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<th rowspan="2">2011-01-01</th>
+					<td>100500</td>
+					<td>33</td>
+				</tr>
+				<tr>
+					<td>100</td>
+					<td>500</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<dl class=spisok>
+			<dt>a</dt>
+			<dd>Creates a hyperlink</dd>
+			<dt>h1</dt>
+			<dd>Creates a top-level header</dd>
+		</dl>
+
+		<a href="mailto:sasha.cherdincev@gmail.com">FeedBack</a>
+		<a href="tel:+79538357835">CallBack</a>
+		<a href="javascript">JavaScript</a>
+
+		<a href="http://duckduckgo.com" target="_blank" rel="noopener"> <!-- target blank - OPEN IN NEW TAB, NOT RELOAD, BUT NON_SAFE w/o noopener OR nofollow noopener OR some other ways!!! -->
+			<img src="https://duckduckgo.com/assets/logo_homepage_mobile.normal.v108.unoptimized.svg">
+		</a>
+
+		<p><img src="webs/IMG_20200613_234321.jpg"></p>
+
+		<div class=class_in_div>
+			<ol><li>child 1.1<ol><li>child 2<ol><li>child 3<ol><li>child 4</li></ol></li></ol></li></ol></li>
+			<li>child 1.2</li><li>child 1.3</li><li>child 1.4</li><li>child 1.5</li></ol>
+			<ul><li>point1</li><li>point2</li><li>point3</li></ul>
+
+		</div>
+		<ul><li>point1</li><li>point2</li><li>point3</li></ul>
+
+		<div class=the-last-one>
+			<p> 
+				sometext 
+			</p>
+			<p id=pp>
+				wqerwertyio;upet;sldfhjkgsd.bnf,xvbnmxdjkhfgl;sdrjgtawisetjaslknf.vm,bxn.hnjzdl;yjg;'zskjcv.mnxlthj'
+			</p>
+		</div>
+
+		<div class="first_block">
+			<div class="second_block">
+				Текст
+			</div>
+		</div>
+
+		<p><a id="chapter2">chapter2</a></p>
+
+		<p><a href="div.html">div page</a></p>
+		<p><a href="float&clear.html">float&clear page</a></p>
+		<p><a href="flex.html">flex page</a></p>
+		<p><a href="grid.html">grid page</a></p>
+		<p><a href="float_test.html">float test page, division of the page into two sides</a></p>
+		
+		<script src="!https://stepic.org/js/jquery.js" charset="windows-1251" async></script> <!-- отличн от сйта кодировка, загружать не перед остатком сайта а параллельно; размещать ближе к концу для быстрогруза -->
+
+		<!-- <? src="xml/test.xml" type="text/xml" friend.2></?> -->
+	</body>
+</html>
+
+

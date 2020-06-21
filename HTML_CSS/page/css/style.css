@@ -1,0 +1,141 @@
+/* 
+* - universal selector 
+div:not(selectorX) {
+	for every div but not one with selectorX
+}
+many options for affecting N child
+*/
+
+body {
+  font-family: Arial, Verdana,  sans-serif; /* Семейство шрифтов */
+  /*src: url(fonts/arial.ttf); */
+  font-size: 12pt; /* Размер основного шрифта в пунктах  */
+  /* background-color: #9999;  Цвет фона веб-страницы */
+  /* background-image: url(.../pics/pic.png);  Цвет фона веб-страницы */
+  color: #000; /* Цвет основного текста */ 
+}
+h1 {
+  color: #a52a2a; /* Цвет заголовка */
+  font-size: 14pt; /* Размер шрифта в пунктах */
+  font-family: Georgia, Times, serif; /* Семейство шрифтов */
+  font-weight: normal; /* Нормальное начертание текста  */
+}
+p {
+  text-align: justify; /* Выравнивание по ширине */
+  margin-left: 30px; /* Отступ слева в пикселах */
+  margin-right: 10px; /* Отступ справа в пикселах */
+  /*border-top: 1px solid #999; /* Параметры линии слева */
+  /*border-left: 1px solid #999; /* Параметры линии слева */
+  /*border-right: 1px solid #999; /* Параметры линии слева */
+  /*border-bottom: 1px solid #999; /* Параметры линии снизу */
+  padding-left: 10px; /* Отступ от линии слева до текста  */
+  padding-bottom: 2px; /* Отступ от линии снизу до текста  */
+}
+
+#Jack::before {
+	content: "Captain";
+	text-decoration: underline;
+	display: inline;
+}
+
+#sometext {
+	font-size: 16pt;
+	width: 300px;
+	height: 100px;
+	margin:10px;
+	margin-right: 100px;
+	padding-right: 10px;
+	/* display: ; 
+	visibility: hidden;
+	left: ;*/
+	text-align: center;
+	border-right: 3px solid #999; /* Параметры линии слева, padding|border|margin */
+}
+
+.types, .spisok { font-size: 6pt }
+
+.spisok2 { text-align: center }
+
+.spisok2::before {
+	content: ".spisok2:before";
+	display: inline;
+}
+.spisok2::after {
+	content: ".spisok2:after";
+	display: inline;
+}
+table.spisok {
+	font-size: 6pt;
+	color: #3c3c3c;
+	font-weight: bold;
+	text-decoration: underline;
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sky.jpg/800px-Sky.jpg)
+}
+
+#Chapter2:hover { font-size: 12pt } /* visited, link =nonvisited, */
+
+a:visited {color: grey }
+a:link { color: maroon }
+
+ul + p {color: red }
+
+
+#container > ol { color: blue }
+
+a[title] { font-size: 16pt }
+
+a[href*="yes"] { color: green; font-size: 6pt }
+
+a[href^="/admin"] { color: green; content: "site"; display: inline; background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sky.jpg/800px-Sky.jpg) }
+
+a[href$=".jpg"] { color: green } /* ~= if space by any side of searched word */
+
+a[attribute="image"] {color: green} /* OUR OWN ATTRIBUTE, WE SHOULD PLACE IT IN EACH LINK WE WANT TO BE CHANGED */
+
+div.class_in_div a {}
+
+input[type=checkbox]:checked { background-color: yellow; border: 10px solid black }
+textarea:focus { background-color: yellow }
+input:focus { background: violet }
+
+
+p::first-letter { font-weight: 60pt } /* X::pseudoElement */
+
+
+ul:nth-of-type(2) { font-style: italic }
+/*ul:nth-last-of-type(2) { font-style: italic }*/
+
+li:first-child { font-style: italic; }
+li:last-child { font-style: oblique }
+li:nth-child(2) { color: orange }
+li:nth-last-child(2) { color: violet }
+
+li:only-of-type:after {content: 'onlyoftype'; font-size: 6pt; vertical-align: sub; display: inline}
+/* :first-of-type */
+div p:only-child:after {content: 'onlychild'; font-size: 6pt; vertical-align: super; display: inline}
+
+.first_block {
+	display: inline-block;
+	width: 500px;
+	height: 50px;
+	border: 1px red solid;
+	padding: 10px;
+}
+
+.second_block {
+	display: none;
+}
+
+.first_block:hover .second_block {
+	display: block;
+}
+/*
+.slide {
+	background-image: url(.../pic.png)
+}
+@font-face {
+	font-family: Terminus;
+	src: url(fonts/terminus.ttf);
+}
+could use @import for including other css
+*/

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>float&clear</title>
+	</head>
+	<body>
+		<div class="outer">
+
+			<div class="sqr fl">1</div>
+			<div class="sqr fl">2</div>
+			<div class="sqr fl">3</div>
+			<div class="sqr fl">4</div>
+
+			<div class="clr"></div>
+
+			<div class="sqr fr">1</div>
+			<div class="sqr fr">2</div>
+			<div class="sqr fr">3</div>
+			<div class="sqr fr">4</div>
+		</div>
+
+		<div class="outer">
+			<p>11here goes some text I would say it is better to come later but here we are. I love my text, it is the best text ever. There is nothing better than it. ha ha ha ha ha ha ha ha ha</p>
+			<div class="sqr fl">1</div>
+			<div class="sqr fl">2</div>
+			<p>12here goes some text I would say it is better to come later but here we are. I love my text, it is the best text ever. There is nothing better than it. ha ha ha ha ha ha ha ha ha</p>
+			<div class="sqr fl">3</div>
+			<div class="sqr fl">4</div>
+			<p>13here goes some text I would say it is better to come later but here we are. I love my text, it is the best text ever. There is nothing better than it. ha ha ha ha ha ha ha ha ha</p>
+			<div class="clr"></div>
+
+			<p>21here goes some text I would say it is better to come later but here we are. I love my text, it is the best text ever. There is nothing better than it. ha ha ha ha ha ha ha ha ha</p>
+			<div class="sqr fr">1</div>
+			<div class="sqr fr">2</div>
+			<p>22here goes some text I would say it is better to come later but here we are. I love my text, it is the best text ever. There is nothing better than it. ha ha ha ha ha ha ha ha ha</p>
+			<div class="sqr fr">3</div>
+			<div class="sqr fr">4</div>
+			<p>23here goes some text I would say it is better to come later but here we are. I love my text, it is the best text ever. There is nothing better than it. ha ha ha ha ha ha ha ha ha</p>
+		</div>
+		
+		<style>
+			.outer { float: left; width:280px; border: solid black; margin: 5px }
+			.sqr { background: red; margin: 10px; width: 70px; height: 70px }
+			.fl { float: left; }
+			.fr { float: right; }
+			.clr { clear: both; }
+		</style>
+	</body>
+</html>
