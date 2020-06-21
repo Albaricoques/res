@@ -26,6 +26,6 @@ opencv_PyQt5/
 ‌MANY_PICS_CUT_RENAME.py - одновременная обрезка и переименование большого числа картинок;
 
 tcp/
-‌tcp_server_127_0_0_1_1234.py и tcp_client_NEWTAB.py - обмен произвольными сообщениями с сервером;
+tcp_server_127_0_0_1_1234.py и tcp_client_NEWTAB.py - обмен произвольными сообщениями с сервером;
 ‌tcp_server_127_0_0_1_1234_WITH_EXACT_FUNCTIONS.py и tcp_client_NEWTAB_WITH_EXACT_FUNCTIONS.py - обмен сообщениями фиксированной длины с сервером с учётом возможной потери соединения в процессе (недоотправленные данные отправляются в следующем пакете);
 ‌tcp_server_html_127_0_0_1_1234.py и tcp_client_html_NEWTAB.py - скачивание файлов с сервера;
