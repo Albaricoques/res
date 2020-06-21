@@ -1,22 +1,22 @@
 # res
 
-HTML_CSS/page/test.html 
+<b> HTML_CSS/page/test.html </b>
 
 практика различных подходов к оформлению веб-страницы и вставки html-блоков различной направленности.
 
 
-PARSER/PARSER_edx_course_downloader.py 
+<b> PARSER/PARSER_edx_course_downloader.py </b>
 
 Скачивает курс edX, на который записан данный аккаунт, для доступа оффлайн в течение любого времени. 
 Создает папку с именем курса, скачивает туда по папкам каждую страницу курса с её видео и субтитрами
 
 
-bash 
+<b> bash/ </b>
 
 Скрипты bash: калькулятор, наибольший общий делитель, интерфейс.
 
 
-nginx_gunicorn_wsgi/init.sh
+<b> nginx_gunicorn_wsgi/init.sh </b>
 
 nginx в ответ на запрос GET к
 
@@ -27,7 +27,7 @@ nginx в ответ на запрос GET к
 gunicorn в ответ на запрос GET к 0.0.0.0:8080 вызывает wsgi-обработчик, который выводит все параметры запроса GET построчно.
 
 
-opencv_PyQt5/
+<b> opencv_PyQt5/ </b>
 
 Различные применения opencv и pyqt5 в Python:
 
@@ -38,7 +38,7 @@ opencv_PyQt5/
 ‌MANY_PICS_CUT_RENAME.py - одновременная обрезка и переименование большого числа картинок;
 
 
-tcp/
+<b> tcp/ </b>
 
 tcp_server_127_0_0_1_1234.py и tcp_client_NEWTAB.py - обмен произвольными сообщениями с сервером;
 ‌tcp_server_127_0_0_1_1234_WITH_EXACT_FUNCTIONS.py и tcp_client_NEWTAB_WITH_EXACT_FUNCTIONS.py - обмен сообщениями фиксированной длины с сервером с учётом возможной потери соединения в процессе (недоотправленные данные отправляются в следующем пакете);
